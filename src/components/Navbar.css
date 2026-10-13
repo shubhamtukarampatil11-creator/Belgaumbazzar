@@ -1,0 +1,128 @@
+.bb-navbar {
+  background-color: #0f172a;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bb-nav-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bb-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bb-brand-accent {
+  color: #38bdf8;
+}
+
+.bb-search-form {
+  display: flex;
+  flex: 1;
+  max-width: 480px;
+}
+
+.bb-search-input {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.bb-search-btn {
+  padding: 0.55rem 1.1rem;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bb-area-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.bb-area-selector select {
+  background-color: #1e293b;
+  color: #ffffff;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.bb-cart-btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bb-cart-badge {
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+}
+
+.bb-nav-links {
+  background-color: #1e293b;
+  border-top: 1px solid #334155;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.6rem 1.5rem;
+}
+
+.bb-nav-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.bb-nav-links a.active {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .bb-nav-top {
+    flex-wrap: wrap;
+  }
+  .bb-search-form {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+  }
+}
